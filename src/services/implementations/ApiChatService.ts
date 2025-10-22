@@ -35,7 +35,6 @@ export class ApiChatService implements ChatService {
     endpoint: string,
     options: RequestInit = {}
   ): Promise<T> {
-    console.log("makeRequest in ApiChatService")
     // 1. Construct the full URL using this.baseUrl and endpoint
     const url = `${this.baseUrl}${endpoint}`;
 

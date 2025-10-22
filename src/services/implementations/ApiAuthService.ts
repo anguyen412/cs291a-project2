@@ -41,9 +41,6 @@ export class ApiAuthService implements AuthService {
     };
 
     // 4. Make the fetch request with the provided options
-    console.log("fetch options")
-    console.log("fetchOptions:", fetchOptions);
-
     const response = await fetch(url, fetchOptions);
 
     // 5. Handle non-ok responses by throwing an error with status and message
